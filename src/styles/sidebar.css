@@ -1,0 +1,601 @@
+.sidebar {
+  width: 16rem;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo-emoji {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  color: #6b7280;
+}
+
+.nav-item:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.nav-item.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.nav-icon {
+  margin-right: 0.75rem;
+  font-size: 1.125rem;
+}
+
+.nav-text {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-badge {
+  margin-left: auto;
+  background-color: #fbbf24;
+  color: #92400e;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.sidebar-upgrade {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.upgrade-card {
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.upgrade-card h3 {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin: 0 0 0.125rem 0;
+}
+
+.upgrade-card p {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin: 0.75rem 0;
+}
+
+.upgrade-button {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.upgrade-button:hover {
+  background-color: #059669;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-card,
+.progress-card,
+.calendar-card,
+.schedule-card,
+.meal-card,
+.recent-card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Card */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.profile-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.menu-btn {
+  color: #9ca3af;
+  font-size: 1.25rem;
+}
+
+.menu-btn:hover {
+  color: #6b7280;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  margin-right: 0.75rem;
+}
+
+.profile-details h4 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.profile-details p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.profile-stat .stat-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.profile-stat .stat-value {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Progress Card */
+.progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.progress-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.week-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.progress-circle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.progress-value {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.progress-circle p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.circular-progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.progress-ring {
+  width: 7.5rem;
+  height: 7.5rem;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-background {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 8;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke: #10b981;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.progress-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.progress-dot.cardio {
+  background-color: #ef4444;
+}
+
+.progress-dot.strength {
+  background-color: #fbbf24;
+}
+
+.progress-dot.flexibility {
+  background-color: #10b981;
+}
+
+.progress-item span {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.progress-percent {
+  font-weight: 600;
+}
+
+/* Calendar Card */
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.calendar-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calendar-nav button {
+  padding: 0.25rem;
+  color: #6b7280;
+}
+
+.calendar-nav button:hover {
+  background-color: #f3f4f6;
+  border-radius: 0.25rem;
+}
+
+.calendar-grid {
+  font-size: 0.875rem;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-day-header {
+  padding: 0.5rem;
+  text-align: center;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.calendar-date {
+  padding: 0.5rem;
+  text-align: center;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.calendar-date:hover {
+  background-color: #f3f4f6;
+}
+
+.calendar-date.highlighted {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.calendar-date.active {
+  background-color: #10b981;
+  color: white;
+}
+
+/* Schedule Card */
+.schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.schedule-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.add-btn {
+  color: #10b981;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.schedule-item.cardio-item {
+  background-color: #dcfce7;
+}
+
+.schedule-item.strength-item {
+  background-color: #dbeafe;
+}
+
+.schedule-item.yoga-item {
+  background-color: #fef3c7;
+}
+
+.schedule-indicator {
+  width: 0.5rem;
+  height: 2rem;
+  border-radius: 9999px;
+  margin-right: 0.75rem;
+}
+
+.cardio-item .schedule-indicator {
+  background-color: #10b981;
+}
+
+.strength-item .schedule-indicator {
+  background-color: #3b82f6;
+}
+
+.yoga-item .schedule-indicator {
+  background-color: #fbbf24;
+}
+
+.schedule-content {
+  flex: 1;
+}
+
+.schedule-content h4 {
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.schedule-content p {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.schedule-time {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Meal Card */
+.meal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.meal-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.meal-item.breakfast {
+  background-color: #fef3c7;
+}
+
+.meal-item.lunch {
+  background-color: #dcfce7;
+}
+
+.meal-item.dinner {
+  background-color: #fee2e2;
+}
+
+.meal-image {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.meal-content h4 {
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.meal-content p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.25rem 0;
+}
+
+.meal-content span {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* Recent Card */
+.recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.recent-header h3 {
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+}
+
+.recent-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+}
+
+.recent-icon.completed {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.recent-icon.star {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.recent-content p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 0.25rem 0;
+}
+
+.recent-content span {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
