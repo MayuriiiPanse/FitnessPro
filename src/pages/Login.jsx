@@ -22,7 +22,7 @@ const Login = ({ setAuth }) => {
         <div className="auth-header">
           <div className="logo">
             <span className="emoji">💪</span>
-            <span className="text">FitMove</span>
+            <span className="text">MyFitnessPro</span>
           </div>
           <h2>Sign in to your account</h2>
         </div>

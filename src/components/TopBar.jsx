@@ -17,7 +17,7 @@ const TopBar = ({ setAuth }) => {
       <div className="topbar-content">
         <div className="mobile-logo">
           <span className="emoji">💪</span>
-          <span className="text">FitMove</span>
+          <span className="text">MyFitnessPro</span>
         </div>
         
         <div className="search-container">

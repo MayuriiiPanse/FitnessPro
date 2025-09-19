@@ -17,7 +17,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     <div className="sidebar">
       <div className="sidebar-header">
         <span className="logo-emoji">💪</span>
-        <span className="logo-text">FitMove</span>
+        <span className="logo-text">MyFitnessPro</span>
       </div>
       
       <nav className="sidebar-nav">
